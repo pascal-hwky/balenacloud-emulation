@@ -1,4 +1,4 @@
-# balenaCloud emulated build gives wrong output
+# balenaCloud emulated build breaks application
 
 ## Problem statement
 
@@ -35,7 +35,7 @@ After the deployment is completed, you should see the following device output:
 standard_init_linux.go:211: exec user process caused "exec format error"
 ```
 
-This error message indicates that the Docker image contains invalid instructions and was therefore compiled for a different architecture. Repeating the build *without emulation* does not cause this issue.
+This error message indicates that the Docker image contains invalid instructions and was therefore compiled for a different architecture. Repeating the build *without emulation* (by leaving out the `--emulated` flag) does not cause this issue.
 
 The balena-cli [documentation](https://www.balena.io/docs/learn/deploy/deployment/#--emulated--e) mentions the following:
 
