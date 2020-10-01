@@ -1,5 +1,7 @@
 # balenaCloud emulated build breaks application
 
+ > A [workaround](https://forums.balena.io/t/balenacloud-emulated-build-breaks-application/194951/9?u=pdboef) for this problem is available on balenaForums.
+
 ## Problem statement
 
 balenaCloud offers two types of builders for ARM devices:
